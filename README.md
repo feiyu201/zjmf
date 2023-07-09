@@ -48,6 +48,8 @@
    国内服务器可以用以下命令：
 
    ```
+   rm -f /home/zjmf/dashboard/www/extend/other/extension
+   echo -n "######" > /home/zjmf/dashboard/www/extend/other/extension
    wget https://ghproxy.com/https://raw.githubusercontent.com/feiyu201/zjmf/main/ext/php7.2/idcsmart.so -O /usr/lib64/php/modules/idcsmart.so
    echo "extension=idcsmart.so" >> /etc/php.d/40-idcsmart.ini
    systemctl restart php-fpm
